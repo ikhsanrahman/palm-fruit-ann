@@ -194,10 +194,10 @@ class DataProcessing:
 
 modelProcess = DataProcessing()
 # path_process = '/home/ikhsan/testing/ripeness.xlsx'
-path_process = '/home/ikhsan/testing/data_sawit1.xlsx'
+path_process = '/home/ikhsan/Projects/palm-fruit-ann/data_sawit1.xlsx'
 # path_testing = '/home/ikhsan/testing/F1S1depan_diam.xlsx'
 # path_testing = '/home/ikhsan/testing/data_sawit_testing.xlsx'
-path_testing = '/home/ikhsan/testing/mentah_2.xlsx'
+path_testing = '/home/ikhsan/Projects/palm-fruit-ann/matang1.xlsx'
 
 process = modelProcess.processData(path_process)
 testing = modelProcess.newData(path_testing)
@@ -249,11 +249,11 @@ if i in range(2,4):
     outcome['message'] = 'Matang'
     outcome['index'] = '1'
 
-# if outcome['message'] == 'Mentah':
-#     os.system("mpg321 mentah.mp3")
+if outcome['message'] == 'Mentah':
+    os.system("mpg321 mentah.mp3")
 
-# if outcome['message'] == 'Matang':
-#     os.system("mpg321 matang.mp3")
+if outcome['message'] == 'Matang':
+    os.system("mpg321 matang.mp3")
 
 Window(outcome['message'])
 # print('prediction result', result)
