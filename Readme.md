@@ -21,11 +21,8 @@ Artificial Neural Network. beside that, also involves integrations system and em
 
 ## data processing
 * the data is captured by camera. then, the image will be converted to matrix and processed using python to adjusted with model (ANN) that gonna used.
-* after processed, resulted a constant that gonna used to predict the new data.
+* after processed, resulted a parameter value (constant) that gonna used to predict the new data.
 * the ouput is classification regarding ripe of unripe of palm fruit
-
-
-
 
 # Graph that obtained
 ![](readme/graph.jpeg)
